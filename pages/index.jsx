@@ -3,7 +3,7 @@ import {
   Container,
   Box,
   Text,
-  Link,
+  Link as ChakraLink,
   VStack,
   Code,
   Grid,
@@ -26,7 +26,7 @@ export default function Home() {
             <Text>
               Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
             </Text>
-            <Link
+            <ChakraLink
               href="https://chakra-ui.com"
               color="telegram.500"
               fontSize="2xl"
@@ -34,7 +34,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               Learn Chakra
-            </Link>
+            </ChakraLink>
           </VStack>
         </Grid>
       </Box>
