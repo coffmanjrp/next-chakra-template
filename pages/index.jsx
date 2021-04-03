@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import {
   Container,
   Box,
@@ -26,15 +27,16 @@ export default function Home() {
             <Text>
               Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
             </Text>
-            <ChakraLink
-              href="https://chakra-ui.com"
-              color="telegram.500"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </ChakraLink>
+            <Link href="https://chakra-ui.com" passHref>
+              <ChakraLink
+                color="telegram.500"
+                fontSize="2xl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn Chakra
+              </ChakraLink>
+            </Link>
           </VStack>
         </Grid>
       </Box>
